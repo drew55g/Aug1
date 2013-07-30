@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    NSURL *url = [NSURL URLWithString:@"http://www.github.com/drew55g/"];
+    NSURL *url = [NSURL URLWithString:@"http://www.github.com/drew55g/Aug1"];
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
     [_github loadRequest:req];
     _github.scalesPageToFit=YES;
