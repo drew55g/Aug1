@@ -7,7 +7,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVAudioPlayer.h>  //needed for AVAudioPlayer
+
 
 @interface aug1FirstViewController : UIViewController
+
+{
+    AVAudioPlayer *music;
+    AVAudioPlayer *music2;
+    int var1;
+    int var2;
+    float result;
+    char operand;
+    BOOL firstNumber;
+    BOOL secondNumber;
+    NSMutableString *displayString;
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *screenDisplay;
+- (IBAction)buttonclick:(UIButton *)sender;
+- (IBAction)buttonHonk:(UIButton *)sender;
 
 @end

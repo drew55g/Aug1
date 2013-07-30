@@ -13,13 +13,15 @@
 @end
 
 @implementation aug1SecondViewController
+@synthesize github = _github;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Second", @"Second");
-        self.tabBarItem.image = [UIImage imageNamed:@"second"];
+        self.title = NSLocalizedString(@"SourceCode", @"HSourceCode");
+        self.tabBarItem.image = [UIImage imageNamed:@"ic_action_github"];
+        //spinnerlocation = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
     }
     return self;
 }
@@ -28,12 +30,33 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSURL *url = [NSURL URLWithString:@"http://www.github.com/drew55g/"];
+    NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    [_github loadRequest:req];
+    _github.scalesPageToFit=YES;
+    _github.delegate = self;
+    NSLog(@"Webview loaded");
 }
 
-- (void)didReceiveMemoryWarning
+- (void)webViewDidStartLoad:(UIWebView *)_github;
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [_spinner startAnimating];
+    NSLog(@"New Webview loaded");
 }
+
+
+  - (void)webViewDidFinishLoad:(UIWebView *)_github;
+   {
+    NSLog(@"github finished loading");
+    [_spinner stopAnimating];
+    _spinner.hidesWhenStopped=YES;
+   }
+
+
+        - (void)didReceiveMemoryWarning
+        {
+            [super didReceiveMemoryWarning];
+            // Dispose of any resources that can be recreated.
+        }
 
 @end

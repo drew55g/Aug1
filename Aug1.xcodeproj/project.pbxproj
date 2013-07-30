@@ -24,6 +24,14 @@
 		3A07DBA717A75A3B004CD987 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A07DBA617A75A3B004CD987 /* second@2x.png */; };
 		3A07DBAA17A75A3B004CD987 /* aug1FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A07DBA817A75A3B004CD987 /* aug1FirstViewController.xib */; };
 		3A07DBAD17A75A3B004CD987 /* aug1SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A07DBAB17A75A3B004CD987 /* aug1SecondViewController.xib */; };
+		3A07DBB417A75AFE004CD987 /* ic_menu_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A07DBB317A75AFE004CD987 /* ic_menu_home.png */; };
+		3A07DBB617A75B35004CD987 /* ic_action_github.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A07DBB517A75B35004CD987 /* ic_action_github.png */; };
+		3A07DBB817A75BDA004CD987 /* Apple_gray_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A07DBB717A75BDA004CD987 /* Apple_gray_logo.png */; };
+		3A07DBBA17A77AFD004CD987 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A07DBB917A77AFD004CD987 /* AVFoundation.framework */; };
+		3A07DBBD17A77C87004CD987 /* button-10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3A07DBBB17A77C87004CD987 /* button-10.mp3 */; };
+		3A07DBBE17A77C87004CD987 /* button-16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3A07DBBC17A77C87004CD987 /* button-16.mp3 */; };
+		3A07DBC017A792D4004CD987 /* whiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A07DBBF17A792D4004CD987 /* whiteButton.png */; };
+		3A07DBC217A792EB004CD987 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A07DBC117A792EB004CD987 /* blueButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +58,14 @@
 		3A07DBA617A75A3B004CD987 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		3A07DBA917A75A3B004CD987 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/aug1FirstViewController.xib; sourceTree = "<group>"; };
 		3A07DBAC17A75A3B004CD987 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/aug1SecondViewController.xib; sourceTree = "<group>"; };
+		3A07DBB317A75AFE004CD987 /* ic_menu_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_menu_home.png; sourceTree = "<group>"; };
+		3A07DBB517A75B35004CD987 /* ic_action_github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_action_github.png; sourceTree = "<group>"; };
+		3A07DBB717A75BDA004CD987 /* Apple_gray_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple_gray_logo.png; sourceTree = "<group>"; };
+		3A07DBB917A77AFD004CD987 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3A07DBBB17A77C87004CD987 /* button-10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "button-10.mp3"; sourceTree = "<group>"; };
+		3A07DBBC17A77C87004CD987 /* button-16.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "button-16.mp3"; sourceTree = "<group>"; };
+		3A07DBBF17A792D4004CD987 /* whiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteButton.png; sourceTree = "<group>"; };
+		3A07DBC117A792EB004CD987 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A07DBBA17A77AFD004CD987 /* AVFoundation.framework in Frameworks */,
 				3A07DB8317A75A3B004CD987 /* UIKit.framework in Frameworks */,
 				3A07DB8517A75A3B004CD987 /* Foundation.framework in Frameworks */,
 				3A07DB8717A75A3B004CD987 /* CoreGraphics.framework in Frameworks */,
@@ -86,6 +103,7 @@
 		3A07DB8117A75A3B004CD987 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A07DBB917A77AFD004CD987 /* AVFoundation.framework */,
 				3A07DB8217A75A3B004CD987 /* UIKit.framework */,
 				3A07DB8417A75A3B004CD987 /* Foundation.framework */,
 				3A07DB8617A75A3B004CD987 /* CoreGraphics.framework */,
@@ -116,6 +134,13 @@
 		3A07DB8917A75A3B004CD987 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3A07DBC117A792EB004CD987 /* blueButton.png */,
+				3A07DBBF17A792D4004CD987 /* whiteButton.png */,
+				3A07DBBB17A77C87004CD987 /* button-10.mp3 */,
+				3A07DBBC17A77C87004CD987 /* button-16.mp3 */,
+				3A07DBB717A75BDA004CD987 /* Apple_gray_logo.png */,
+				3A07DBB517A75B35004CD987 /* ic_action_github.png */,
+				3A07DBB317A75AFE004CD987 /* ic_menu_home.png */,
 				3A07DB8A17A75A3B004CD987 /* Aug1-Info.plist */,
 				3A07DB8B17A75A3B004CD987 /* InfoPlist.strings */,
 				3A07DB8E17A75A3B004CD987 /* main.m */,
@@ -189,6 +214,13 @@
 				3A07DBA717A75A3B004CD987 /* second@2x.png in Resources */,
 				3A07DBAA17A75A3B004CD987 /* aug1FirstViewController.xib in Resources */,
 				3A07DBAD17A75A3B004CD987 /* aug1SecondViewController.xib in Resources */,
+				3A07DBB417A75AFE004CD987 /* ic_menu_home.png in Resources */,
+				3A07DBB617A75B35004CD987 /* ic_action_github.png in Resources */,
+				3A07DBB817A75BDA004CD987 /* Apple_gray_logo.png in Resources */,
+				3A07DBBD17A77C87004CD987 /* button-10.mp3 in Resources */,
+				3A07DBBE17A77C87004CD987 /* button-16.mp3 in Resources */,
+				3A07DBC017A792D4004CD987 /* whiteButton.png in Resources */,
+				3A07DBC217A792EB004CD987 /* blueButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

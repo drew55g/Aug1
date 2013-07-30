@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@interface aug1SecondViewController : UIViewController <UIWebViewDelegate> {
+    UIWebView* github;
+}
 
-@interface aug1SecondViewController : UIViewController
+
+//@interface aug1SecondViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIWebView *github;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+
 
 @end
