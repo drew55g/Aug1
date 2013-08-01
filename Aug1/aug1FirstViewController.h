@@ -18,14 +18,20 @@
     int var1;
     int var2;
     float result;
-    char operand;
-    BOOL firstNumber;
-    BOOL secondNumber;
+    
+    
+   
     NSMutableString *displayString;
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *screenDisplay;
 - (IBAction)buttonclick:(UIButton *)sender;
 - (IBAction)buttonHonk:(UIButton *)sender;
+- (IBAction)Clear:(UIButton *)sender;
+- (IBAction)Plus:(UIButton *)sender;
+- (IBAction)Multiply:(UIButton *)sender;
+- (IBAction)Subtract:(UIButton *)sender;
+- (IBAction)Divide:(UIButton *)sender;
+- (IBAction)Equals:(UIButton *)sender;
 
 @end

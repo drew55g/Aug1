@@ -7,6 +7,7 @@
 //
 
 #import "aug1FirstViewController.h"
+#include <tgmath.h>
 
 @interface aug1FirstViewController ()
 
@@ -14,10 +15,16 @@
 
 @implementation aug1FirstViewController
 
-int var1 = NULL;
-int var2 = NULL;
+int var1 = 0;
+int var2 = 0;
 int n = 0;
-int currentNumber;
+int currentNumber =0;
+BOOL firstNumber = TRUE;
+NSString *displayString;
+NSString *displayResult;
+float result;
+char operand;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -106,25 +113,104 @@ int currentNumber;
 -(void) proccessDigit: (int) digit
 {
     currentNumber = currentNumber * 10 + digit;
-    [displayString appendString:[NSString stringWithFormat:@"%i", digit]];
+    displayString = [NSString stringWithFormat:@"%i", currentNumber];
     _screenDisplay.text = displayString;
+    NSLog(@"%d", currentNumber);
+    NSLog(@"%d", digit);
+    NSLog(@"%@", displayString);
+    
+    if (firstNumber == TRUE)
+        var1 = currentNumber;
+        else
+           var2 = currentNumber;
 }
 
 - (IBAction)buttonclick:(UIButton *)sender {
-    ++n;
+   
     NSString *title = [sender titleForState:UIControlStateNormal];
-    //_screenDisplay.text=[NSString stringWithFormat:@"%@", title];
-    // _screenDisplay.text=[NSString stringWithFormat:@"%@", title];
-   //var1 = title.intValue;
-    //int digit = sender.tag;
-    //[self proccessDigit:digit];
-    
+
+ 
+     int digit = [title intValue];
+    [self proccessDigit:digit];
+    NSLog(@"%@", title);
     [music play];
-    
-  
+   
+   
 }
 
 - (IBAction)buttonHonk:(UIButton *)sender {
     [music2 play];
 }
+
+- (IBAction)Clear:(UIButton *)sender {
+    currentNumber = 0;
+    displayString = 0;
+    _screenDisplay.text = displayString;
+      [music play];
+}
+
+- (IBAction)Plus:(UIButton *)sender
+{
+    firstNumber = false;
+    operand = '+';
+    currentNumber = 0;
+    NSString *operation = [sender titleForState:UIControlStateNormal];
+    _screenDisplay.text=[NSString stringWithFormat:@"%@", operation];
+     [music play];
+}
+
+    - (IBAction)Multiply:(UIButton *)sender
+    {
+         firstNumber = false;
+        operand = '*';
+        currentNumber = 0;
+        NSString *operation = [sender titleForState:UIControlStateNormal];
+        _screenDisplay.text=[NSString stringWithFormat:@"%@", operation];
+         [music play];
+    }
+
+        - (IBAction)Subtract:(UIButton *)sender
+        {
+             firstNumber = false;
+            operand = '-';
+            currentNumber = 0;
+            NSString *operation = [sender titleForState:UIControlStateNormal];
+            _screenDisplay.text=[NSString stringWithFormat:@"%@", operation];
+             [music play];
+        }
+
+            - (IBAction)Divide:(UIButton *)sender
+            {
+                 firstNumber = false;
+                operand = '/';
+                currentNumber = 0;
+                NSString *operation = [sender titleForState:UIControlStateNormal];
+                _screenDisplay.text=[NSString stringWithFormat:@"%@", operation];
+                 [music play];
+            }
+
+                - (IBAction)Equals:(UIButton *)sender
+                {
+                     firstNumber = TRUE;
+                    
+                    if (operand == '+')
+                        result = var1 + var2;
+                    if (operand == '*')
+                        result = var1 * var2;
+                    if (operand == '-')
+                        result = var1 - var2;
+                    if (operand == '/' && !var2 == 0)
+                        result = var1 / var2;
+                    else if (operand == '/' && var2 == 0)
+                        result = 0;
+                        
+                    
+                    displayResult = [NSString stringWithFormat:@"%f", result];
+                        _screenDisplay.text = displayResult;
+                       currentNumber = 0;
+                    [music play];
+                }
+
+
+
 @end
