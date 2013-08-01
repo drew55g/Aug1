@@ -191,8 +191,6 @@ char operand;
 
                 - (IBAction)Equals:(UIButton *)sender
                 {
-                     firstNumber = TRUE;
-                    
                     if (operand == '+')
                         result = var1 + var2;
                     if (operand == '*')
@@ -209,6 +207,8 @@ char operand;
                         _screenDisplay.text = displayResult;
                        currentNumber = 0;
                     [music play];
+                      firstNumber = TRUE;
+                    var1 = result;
                 }
 
 
