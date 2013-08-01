@@ -26,7 +26,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *screenDisplay;
 - (IBAction)buttonclick:(UIButton *)sender;
-- (IBAction)buttonHonk:(UIButton *)sender;
+- (IBAction)lucky:(UIButton *)sender;
 - (IBAction)Clear:(UIButton *)sender;
 - (IBAction)Plus:(UIButton *)sender;
 - (IBAction)Multiply:(UIButton *)sender;

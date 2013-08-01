@@ -125,22 +125,22 @@ char operand;
            var2 = currentNumber;
 }
 
-- (IBAction)buttonclick:(UIButton *)sender {
-   
+- (IBAction)buttonclick:(UIButton *)sender
+{
     NSString *title = [sender titleForState:UIControlStateNormal];
-
- 
      int digit = [title intValue];
     [self proccessDigit:digit];
     NSLog(@"%@", title);
     [music play];
-   
-   
 }
 
-- (IBAction)buttonHonk:(UIButton *)sender {
-    [music2 play];
+- (IBAction)lucky:(UIButton *)sender {
+    int luckyNum = random();
+    _screenDisplay.text=[NSString stringWithFormat:@"%i", luckyNum];
+    var1 = luckyNum;
 }
+
+
 
 - (IBAction)Clear:(UIButton *)sender {
     currentNumber = 0;

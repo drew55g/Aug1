@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Aug1/aug1FirstViewController.m"
-         timestampString = "397025048.289285"
+         timestampString = "397028589.162917"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "132"
-         endingLineNumber = "132"
+         startingLineNumber = "130"
+         endingLineNumber = "130"
          landmarkName = "-buttonclick:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -86,7 +86,7 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Aug1/aug1FirstViewController.m"
-         timestampString = "397025048.289285"
+         timestampString = "397028589.162917"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "146"
